@@ -5,7 +5,7 @@ import os
 
 # usage " python perfume.py "
 
-## THIS TOOL IS CREATED BY WHOAMIANOOB !
+## THIS TOOL IS CREATED BY theinfraredsocket !
 
 # INTRO !!
 def banner():
@@ -19,7 +19,7 @@ def banner():
  print("\033[0;32m @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
  print("\033[0;32m @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
  print("\033[0;34m -----------------------------------------------")
- print("\033[1;37m       *-* PERFUME BY WHOAMIANOOB *-*           ")
+ print("\033[1;37m       *-* PERFUME BY THEINFRAREDSOCKET *-*           ")
 
 time.sleep(2)
 os.system("clear")
